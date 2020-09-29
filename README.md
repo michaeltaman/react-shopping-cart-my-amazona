@@ -37,4 +37,7 @@ Demo : https://amazonaapp.herokuapp.com/
   4.  Define State for id, name, brand, category, image, price, countInStock, description
 
 - 17-Checkout-Wizard-Screen
-- 18-Create-Order  
+- 18-Create-Order 
+
+-23 Deploy
+  Begin git from scratch, see https://www.youtube.com/watch?v=U7xQZHpZeCc
