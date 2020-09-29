@@ -41,3 +41,10 @@ Demo : https://amazonaapp.herokuapp.com/
 
 -23 Deploy
   Begin git from scratch, see https://www.youtube.com/watch?v=U7xQZHpZeCc
+  Additional instructions: https://gist.github.com/basir/d121df24c47861e13a1cdcbed1cca902#heroku-deploy-steps
+
+  See videos:
+  https://www.udemy.com/course/build-ecommerce-website-by-react-redux-in-one-hour/learn/lecture/20223650#overview (lesson #16)
+  https://www.udemy.com/course/build-ecommerce-website-like-amazon-react-node-mongodb/learn/lecture/17913042#questions/12587382 (lecture #23, #9, #14-16).
+
+  Deployed: https://react-shopping-cart-my-amazona.herokuapp.com/
