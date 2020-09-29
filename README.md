@@ -1,6 +1,6 @@
 # Amazona: An ECommerce Website like Amazon.com
 
-Demo : https://amazonaapp.herokuapp.com/
+Demo : https://react-shopping-cart-my-amazona.herokuapp.com/
 
 ## Table of Conent
 
