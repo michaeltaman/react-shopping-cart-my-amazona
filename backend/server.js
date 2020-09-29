@@ -2,6 +2,7 @@ import express from 'express';
 import config from './config';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
 import orderRoute from './routes/orderRoute';
@@ -15,6 +16,16 @@ mongoose.connect(mongodbUrl, {
 
 const app = express();
 app.use(bodyParser.json());
+
+//----------------------deployment heroku------------------------------
+app.use("/", express.static(__dirname + "/../frontend/build"));
+app.get("/", (req, res) => res.sendFile(__dirname  + "/../frontend/build/index.html"))
+//OK !!!
+
+
+// app.use(express.static(path.join(__dirname, '/../frontend/build')));
+// app.get('*', (req, res) => res.sendFile(path.join('${__dirname}/../frontend/build/index.html')));
+//---------------------------------------------------
 
 app.use('/api/users', userRoute);
 app.use('/api/products', productRoute);
