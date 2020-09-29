@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 //----------------------deployment heroku------------------------------
 app.use("/", express.static(__dirname + "/../frontend/build"));
 app.get("/", (req, res) => res.sendFile(__dirname  + "/../frontend/build/index.html"))
+app.listen(config.PORT, () => {
+  console.log('Server started at port' + `${config.PORT}`);
+});
 //OK !!!
 
 
@@ -48,6 +51,6 @@ app.get("/api/config/paypal", (req, res) => {
 //   res.send(data.products);
 // });
 
-app.listen(5000, () => {
+/*app.listen(5000, () => {
   console.log('Server started at http://localhost:5000');
-});
+});*/
